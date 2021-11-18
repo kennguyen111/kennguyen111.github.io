@@ -1,6 +1,6 @@
 blockquote {
     margin: auto;
-    width: 55%;
+    width: 60%;
     padding: 10px;
     padding-top: 150px;
 }
@@ -12,7 +12,7 @@ blockquote p {
     color: black;
     letter-spacing: 2px;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 #type-text::after {
