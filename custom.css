@@ -25,6 +25,12 @@ blockquote p {
     50% {opacity: 0;}
 }
 
+@media screen and (max-width: 767px) {
+    blockquote {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
 /*Change Navbar font size   */
 .navbar a {
     font-size: x-large;
