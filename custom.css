@@ -27,6 +27,7 @@ blockquote p {
 
 @media screen and (max-width: 767px) {
     blockquote {
+        margin: auto;
         width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
 }
