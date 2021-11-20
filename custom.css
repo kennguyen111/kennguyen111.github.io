@@ -1,18 +1,30 @@
+/*Apply font to all elements */
+body{
+    font-family: Courier, monospace;
+}
+
+#profile-picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
 blockquote {
     margin: auto;
     width: 70%;
     padding: 10px;
-    padding-top: 100px;
+
 }
 
 blockquote p {
-    font-family: Courier, monospace;
     padding: 15px;
     border-radius: 5px 1em;
     color: black;
     letter-spacing: 2px;
     font-weight: 700;
-    font-size: 30px;
+    font-size:larger;
 }
 
 #type-text::after {
@@ -25,15 +37,41 @@ blockquote p {
     50% {opacity: 0;}
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    blockquote {
-        width: 100%;
-    }
-}
 
 /*Change Navbar font size   */
 .navbar a {
     font-size: x-large;
     color: black;
+}
+
+/*change height of progress bar */
+.progress {
+    height: 10px;
+}
+
+/*change background color of progress bar
+ */
+.progress-bar{
+    background-color: grey;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    /* adjust text type block size*/
+    blockquote {
+        width: 100%;
+    }
+
+    /*adjust skills bar padding between "skills heading" for vertical view*/
+    .progress-wrapper{
+        padding-top: 15px;
+    }
+}
+
+/* mail button */
+.mail-button{
+    text-align: center;
+    color: grey;
+    padding-top: 30px;
 }

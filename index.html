@@ -8,17 +8,19 @@
     <meta name="keywords" content="ken nguyen, index page, portfolio, github">
     <meta name="created" content="2021-11-17">
     <meta name="author" content="Ken Nguyen">
-    <meta http-equiv="refresh" content="20">
+    <meta http-equiv="refresh" content="30">
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="custom.css" rel="stylesheet" >
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         var i = 0;
-        var txt = 'Hello, I am Ken Nguyen. I just graduated with an Information Technology degree. ' +
-            'I love programming and I am looking for an entry level position.';
-        var speed = 120;
+        var txt = 'Hello, I am Ken Nguyen. I just graduated with an Information Technology degree from University of Massachusetts Lowell.\n' +
+            'I can do both front-end development and back end development. I love programming and I am looking for an entry level position.';
+        var speed = 60;
 
         function typeWriter() {
             if (i < txt.length) {
@@ -41,23 +43,17 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutMe.html">About me</a>
+                    <a class="nav-link" href="https://github.com/kennguyen111?tab=repositories" target="_blank">GitHub</a>
                 </li>
+
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Github Projects & Skills</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projects</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Java</a></li>
                         <li><a class="dropdown-item" href="#">Python</a></li>
                         <li><a class="dropdown-item" href="#">JavaScrip</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">GitHub profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Me</a>
-                </li>
-
             </ul>
         </div>
     </div>
@@ -67,14 +63,185 @@
 
 
 <div class="container-fluid mt-3">
+    <img id="profile-picture" src="pic/profilePicture.png" alt="Ken's profile picture" width="262" height="240">
 
+    <figure>
+        <blockquote class="block-quote">
+            <p id="type-text"></p>
+        </blockquote>
+    </figure>
+
+    <section class="section-wrapper skills-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="section-title">
+                        <h2>Skills</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="progress-wrapper">
+
+                                <h3>Back End</h3>
+
+                                <div class="progress-item">
+                                    <span class="progress-title">Java</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    </div>
+                                    <!-- .progress -->
+                                </div>
+                                <!-- .skill-progress -->
+
+                                <div class="progress-item">
+                                    <span class="progress-title">Python</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                                    </div>
+                                    <!-- /.progress -->
+                                </div>
+                                <!-- /.skill-progress -->
+
+                                <div class="progress-item">
+                                    <span class="progress-title">C</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                    </div>
+                                    <!-- /.progress -->
+                                </div>
+                                <!-- /.skill-progress -->
+
+
+                            </div>
+                            <!-- /.progress-wrapper -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="progress-wrapper">
+                                <h3>Front End</h3>
+                                <div class="progress-item">
+                                    <span class="progress-title">JavaScript</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                    <!-- /.progress -->
+                                </div>
+                                <!-- /.skill-progress -->
+
+                                <div class="progress-item">
+                                    <span class="progress-title">JQuery</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                                    </div>
+                                    <!-- /.progress -->
+                                </div>
+                                <!-- /.skill-progress -->
+
+                                <div class="progress-item">
+                                    <span class="progress-title">Bootstrap</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                                    </div>
+                                    <!-- /.progress -->
+                                </div>
+                                <!-- /.skill-progress -->
+
+                                <div class="progress-item">
+                                    <span class="progress-title">HTML</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                    <!-- .progress -->
+                                </div>
+                                <!-- .skill-progress -->
+
+                                <div class="progress-item">
+                                    <span class="progress-title">CSS</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                                    </div>
+                                    <!-- /.progress -->
+                                </div>
+                                <!-- /.skill-progress -->
+                            </div>
+                            <!-- /.progress-wrapper -->
+                        </div>
+                    </div>
+                    <!--.row -->
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="progress-wrapper">
+
+                                <h3>Other Skills</h3>
+
+                                <div class="progress-item">
+                                    <span class="progress-title">Git</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                    </div>
+                                    <!-- /.progress -->
+                                </div>
+                                <!-- /.skill-progress -->
+
+                                <div class="progress-item">
+                                    <span class="progress-title">XML</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                                    </div>
+                                    <!-- .progress -->
+                                </div>
+                                <!-- .skill-progress -->
+
+                                <div class="progress-item">
+                                    <span class="progress-title">SQL</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                    <!-- /.progress -->
+                                </div>
+                                <!-- /.skill-progress -->
+
+                            </div>
+                            <!-- /.progress-wrapper -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- .container-fluid -->
+    </section>
+    <!-- .skills-wrapper -->
 </div>
 
-<figure>
-    <blockquote class="block-quote">
-        <p id="type-text"></p>
-    </blockquote>
-</figure>
+<div class="mail-button">
+    <a class="btn btn-secondary" href="mailto:kennguyen111usa@gmail.com">Send Mail</a>
+</div>
+
+
+<footer>
+    <br>
+    Phone: (985) 714 5877
+    <br>
+    Email: kennguyen111usa@gmail.com
+</footer>
 
 
 </body>
