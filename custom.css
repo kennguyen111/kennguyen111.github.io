@@ -1,7 +1,7 @@
 /*Apply font to all elements */
 body{
     font-family: Courier, monospace;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .navbar a {
@@ -67,7 +67,7 @@ blockquote p {
 
     body{
         font-family: Courier, monospace;
-        padding-top: 200px;
+        padding-top: 100px;
     }
 
     /* For mobile phones: */
