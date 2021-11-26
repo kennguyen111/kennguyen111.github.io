@@ -1,7 +1,26 @@
 /*Apply font to all elements */
 body{
     font-family: Courier, monospace;
+
 }
+
+/*Change links appearance in the menu */
+.offcanvas-body a:link, .offcanvas-body a:visited {
+    font-family: Courier, monospace;
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Courier, monospace;
+    font-weight: bold;
+}
+
+/* menu effect */
+a:hover, a:active {
+    background-color: lightgrey;
+}
+
 
 #profile-picture{
     display: block;
@@ -10,7 +29,7 @@ body{
 
 }
 
-
+/* start style for text-type */
 blockquote {
     margin: auto;
     width: 70%;
@@ -37,23 +56,19 @@ blockquote p {
     50% {opacity: 0;}
 }
 
+/* end text-type styles */
 
-/*Change Navbar font size   */
-.navbar a {
-    font-size: x-large;
-    color: black;
-}
-
+/* start style for progress bars
 /*change height of progress bar */
 .progress {
     height: 10px;
 }
 
-/*change background color of progress bar
- */
+/*change background color of progress bar*/
 .progress-bar{
     background-color: grey;
 }
+/*end styles for progress bars */
 
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
@@ -75,3 +90,10 @@ blockquote p {
     color: grey;
     padding-top: 30px;
 }
+
+/* change size of the "list" icon   */
+.bi-list{
+    font-size: xxx-large;
+
+}
+
