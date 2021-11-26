@@ -1,27 +1,18 @@
 /*Apply font to all elements */
 body{
     font-family: Courier, monospace;
-
+    padding-top: 100px;
 }
 
-
-/*Change links appearance in the menu */
-.offcanvas-body a:link, .offcanvas-body a:visited {
+.navbar a {
     font-family: Courier, monospace;
-    font-size: xx-large;
+    font-size: x-large;
     color: black;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: Courier, monospace;
     font-weight: bold;
 }
-
-/* menu hover effect */
-a:hover, a:active {
-    background-color: lightgrey;
+.navbar-toggler-icon{
+    color: black;
 }
-
 
 #profile-picture{
     display: block;
@@ -91,12 +82,4 @@ blockquote p {
     color: grey;
     padding-top: 30px;
 }
-
-/* change size of the "list" icon   */
-.bi-list{
-    font-size: xxx-large;
-
-}
-
-
 
