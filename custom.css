@@ -4,6 +4,7 @@ body{
 
 }
 
+
 /*Change links appearance in the menu */
 .offcanvas-body a:link, .offcanvas-body a:visited {
     font-family: Courier, monospace;
@@ -16,7 +17,7 @@ body{
     font-weight: bold;
 }
 
-/* menu effect */
+/* menu hover effect */
 a:hover, a:active {
     background-color: lightgrey;
 }
@@ -96,4 +97,6 @@ blockquote p {
     font-size: xxx-large;
 
 }
+
+
 
