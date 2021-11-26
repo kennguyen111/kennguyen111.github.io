@@ -8,15 +8,19 @@
     <meta name="keywords" content="ken nguyen, index page, portfolio, github">
     <meta name="created" content="2021-11-17">
     <meta name="author" content="Ken Nguyen">
-    <meta http-equiv="refresh" content="30">
+
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="custom.css" rel="stylesheet" >
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+
+
+
         var i = 0;
         var txt = 'Hello, I am Ken Nguyen. I just graduated with an Information Technology degree from the University of Massachusetts Lowell.\n' +
             'I can do both front-end development and back-end development. I love programming, and I am looking for an entry-level position.';
@@ -34,30 +38,25 @@
 </head>
 <body onload="typeWriter()">
 
-<nav class="navbar navbar-expand-lg bg-light navbar-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="https://kennguyen111.github.io/">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/kennguyen111?tab=repositories" target="_blank">GitHub</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projects</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Java</a></li>
-                        <li><a class="dropdown-item" href="#">Python</a></li>
-                        <li><a class="dropdown-item" href="#">JavaScrip</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+<div class="offcanvas offcanvas-start" id="offcanvas-navbar">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
     </div>
-</nav>
+    <div class="offcanvas-body nav flex-column  ">
+        <p><a  href="https://github.com/kennguyen111?tab=repositories" target="_blank">GitHub</a></p>
+        <p><a  href="#skills" target="_blank">skills</a></p>
+        <p><a  href="#" target="_blank">Projects</a></p>
+        <p><a  href="#contact" target="_blank">Contact</a></p>
+
+    </div>
+</div>
+
+<div class="container-fluid mt-3">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar">
+        <i class="bi bi-list " > </i>
+    </button>
+</div>
+
 
 
 
@@ -75,7 +74,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="section-title">
+                    <div class="section-title" id="skills">
                         <h2>Skills</h2>
                     </div>
                 </div>
@@ -231,7 +230,7 @@
     <!-- .skills-wrapper -->
 </div>
 
-<div class="mail-button">
+<div class="mail-button" id="contact">
     <a class="btn btn-secondary" href="mailto:kennguyen111usa@gmail.com">Send Mail</a>
 </div>
 
