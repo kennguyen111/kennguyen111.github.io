@@ -17,7 +17,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <script>
+
+        $(document).ready(function(){
+            // Show and hide button after scroll down and up
+            $(window).on("scroll", function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.backTop-btn').fadeIn('slow');
+                } else {
+                    $('.backTop-btn').fadeOut('slow');
+                }
+            });
+            // Clickable button js
+            $("a[href='#backTop']").click(function() {
+                $("html, body").animate({ scrollTop: 0 }, 500);
+            });
+        });
+
+
         var i = 0;
         var txt = 'Hello, I am Ken Nguyen. I just graduated with an Information Technology degree from the University of Massachusetts Lowell.\n' +
             'I can do both front-end development and back-end development. I love programming, and I am looking for an entry-level position.';
@@ -30,13 +50,6 @@
                 setTimeout(typeWriter, speed);
             }
         }
-
-        var myCarousel = document.querySelector('#myCarousel')
-        var carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 2000,
-            wrap: false
-        })
-
 
     </script>
 
@@ -80,12 +93,12 @@
         </blockquote>
     </figure>
 
-    <section class="section-wrapper skills-wrapper">
+    <section class="section-wrapper skills-wrapper" id="skills" >
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="section-title" id="skills">
-                        <h2>Skills</h2>
+                    <div class="section-title" >
+                        <h2 >Skills</h2>
                     </div>
                 </div>
 
@@ -260,6 +273,7 @@
             </div>
         </div>
 
+
         <div class="col-md-6 col-lg-4">
             <!-- Bootstrap 5 card box -->
             <div class="card-box">
@@ -283,10 +297,12 @@
                 <a href="#" class="btn btn-sm btn-dark float-right">Source Code>></a>
             </div>
         </div>
+    </div>
 
+    <div class="row collapse" id="collapse-row">
         <div class="col-md-6 col-lg-4">
             <!-- Bootstrap 5 card box -->
-            <div class="card-box">
+            <div class="card-box multi-collapse" id="project4">
                 <div class="card-thumbnail">
                     <img src="images/office-image-one.jpg" class="img-fluid" alt="">
                 </div>
@@ -298,7 +314,7 @@
 
         <div class="col-md-6 col-lg-4">
             <!-- Bootstrap 5 card box -->
-            <div class="card-box">
+            <div class="card-box multi-collapse" id="project5">
                 <div class="card-thumbnail">
                     <img src="images/office-image-one.jpg" class="img-fluid" alt="">
                 </div>
@@ -310,7 +326,7 @@
 
         <div class="col-md-6 col-lg-4">
             <!-- Bootstrap 5 card box -->
-            <div class="card-box">
+            <div class="card-box multi-collapse" id="project6">
                 <div class="card-thumbnail">
                     <img src="images/office-image-one.jpg" class="img-fluid" alt="">
                 </div>
@@ -319,25 +335,31 @@
                 <a href="#" class="btn btn-sm btn-dark float-right">Source Code>></a>
             </div>
         </div>
-
-
     </div>
 </div>
 
-
-
-
-
-
-<div class="mail-button" id="contact">
-    <a class="btn btn-secondary" href="mailto:kennguyen111usa@gmail.com">Send Mail</a>
+<div class="col-md-12 text-center">
+    <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-row" aria-expanded="true" aria-controls="collapse-row">Show More</button>
 </div>
 
 
+<a href="#backTop" class="backTop-btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><br>Back to Top</a>
+
+
+<div class="mail-button col-md-12  text-left" id="contact">
+    <a class="btn btn-dark" href="mailto:kennguyen111usa@gmail.com">Send Mail</a>
+
+</div>
+
+
+
 <footer>
-    <br>
-    <br>
-    Email: kennguyen111usa@gmail.com
+
+    <div class="col-md-12" >
+        <p id="email">
+            Email: kennguyen111usa@gmail.com
+        </p>
+    </div>
     <br>
 </footer>
 
