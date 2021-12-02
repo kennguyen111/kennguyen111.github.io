@@ -1,0 +1,258 @@
+/* Background for the site */
+html {
+    background: url("../images/background.jpg") no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+/* begin style for index page */
+
+#index-header {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 15px;
+    color: floralwhite;
+}
+
+#login {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 100;
+    font-size: medium;
+    border-radius: 0 0 5px 5px;
+}
+
+#open {
+    margin: 0;
+    cursor: pointer;
+    background-image:  url("../images/open.png");
+    background-repeat: no-repeat;
+    background-position:  8px 7px;
+    color: white;
+    padding: 5px 0 5px 30px;
+    border-radius: 0 0 5px 5px;
+}
+#login .close {
+    background-image: url("../images/close.png");
+}
+
+#open:hover {
+    color: rgb(0,0,0);
+    background-color: rgb(200,200,200);
+}
+
+#login form {
+    padding: 10px 10px 0 10px;
+    display: none;
+}
+#login label {
+    font-size: .75em;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    text-align:right;
+    margin: 0 15px 0 0;
+    display: inline-block;
+}
+#login input[type="text"] {
+    font-size: 14px;
+    width: 140px;
+}
+#login .button {
+    text-align: right;
+    padding-right: 15px;
+}
+
+
+body .shop-name {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: floralwhite;
+}
+
+blockquote {
+    text-align: center ;
+    font-weight: 100;
+    font-size: 2rem;
+    max-width: 600px;
+    line-height: 1.4;
+    position: relative;
+    margin: 0;
+    padding: .5rem;
+
+    margin: 3em auto !important;
+
+}
+
+blockquote p {
+    font-family: Apple Chancery, cursive;
+    padding: 15px;
+    border-radius: 5px 1em;
+    color: floralwhite;
+}
+
+blockquote:before,
+blockquote:after {
+    position: absolute;
+    color: #f1efe6;
+    font-size: 8rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+blockquote:before {
+    content: '“';
+    left: -4rem;
+    top: -2rem;
+}
+
+blockquote:after {
+    content: '”';
+    right: -5rem;
+    bottom: 1rem;
+}
+
+cite {
+    line-height: 3;
+    text-align: left;
+}
+
+/* End style for index page */
+
+/* Begin style for About page */
+body .about-heading {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: floralwhite;
+
+}
+body .about-paragraph {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: floralwhite;
+    width:25em ;
+
+}
+
+/*end style for About page*/
+
+/*Begin style for direction.html */
+body .business-map{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+body .address {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: floralwhite;
+}
+/* End style for direction.html */
+
+
+
+/*Begin style for hours.html */
+body .hours-table{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: floralwhite;
+}
+/*End style for hours.html */
+
+/*Begin style for services.html */
+body .price-list{
+    padding-top: 15px;
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 30px;
+    color: floralwhite;
+}
+/*end style for services.html */
+
+/*start style for apppointment.html */
+#appointmentHeading {
+    text-align: Center;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 30px;
+    color: floralwhite;
+}
+
+body .appointment-form{
+
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    color: floralwhite;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+label { display: inline-block; width: 210px; text-align: right; }
+
+.button{
+    text-align: center;
+}
+
+#appointmentForm label.error {
+    font-size: 0.8em;
+    color: #F00;
+    font-weight: bold;
+    display: block;
+    margin-left: 215px;
+}
+
+#appointmentForm input.error, #contactForm select.error {
+    background: #FFA9B8;
+    border: 1px solid red;
+}
+
+/*end style for appointment.html */
+
+/*begin style for contact.html */
+#contactForm label.error {
+    font-size: 0.8em;
+    color: #F00;
+    font-weight: bold;
+    display: block;
+    margin-left: 215px;
+}
+
+#contactForm input.error, #contactForm select.error {
+    background: #FFA9B8;
+    border: 1px solid red;
+}
+/*end style for contact.html*/
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .about-heading  .about-paragraph{
+        font-size: 50px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .about-heading  .about-paragraph{
+        font-size: 25px;
+    }
+}

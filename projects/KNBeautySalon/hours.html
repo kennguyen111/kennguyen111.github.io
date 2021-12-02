@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Hours</title>
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <link href="smartmenus/sm-core-css.css" rel="stylesheet" >
+    <link href="smartmenus/sm-clean.css" rel="stylesheet" >
+    <script src="_js/jquery.min.js"></script>
+    <script src="smartmenus/jquery.smartmenus.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sm').smartmenus({
+                showFunction: function($ul, complete) {
+                    $ul.slideDown(250, complete);
+                },
+                hideFunction: function($ul, complete) {
+                    $ul.slideUp(250, complete);
+                }
+            }); //end smartmenus
+        }); // end ready
+    </script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="main">
+                <h1 class="shop-name">KN Beauty Salon</h1>
+                <ul class="sm sm-clean">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us </a>
+                        <ul>
+                            <li><a href="about.html">Our History</a></li>
+                            <li><a href="direction.html">Driving Directions</a></li>
+                            <li><a href="hours.html">Hours</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Our Services </a></li>
+                    <li><a href="gallery.html">Our Slideshow </a></li>
+                    <li><a href="appointment.html.html">Make Appointment </a></li>
+                    <li><a href="contact.html">Contact us </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <table class="hours-table">
+        <tr><th>Monday</th><td>9am - 5pm</td></tr>
+        <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
+        <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
+        <tr><th>Thursday</th><td>9am - 5pm</td></tr>
+        <tr><th>Friday</th><td>9am - 5pm</td></tr>
+        <tr><th>Saturday</th><td>9am - 5pm</td></tr>
+        <tr><th>Sunday</th><td>Closed</td></tr>
+    </table>
+</body>
+</html>

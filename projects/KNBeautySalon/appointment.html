@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Make Appointment</title>
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <link href="CSS/jquery-ui.min.css" rel="stylesheet">
+    <link href="CSS/jquery.timepicker.min.css" rel="stylesheet">
+    <link href="smartmenus/sm-core-css.css" rel="stylesheet" >
+    <link href="smartmenus/sm-clean.css" rel="stylesheet" >
+
+    <script src="_js/jquery.min.js"></script>
+    <script src="smartmenus/jquery.smartmenus.min.js"></script>
+    <script src="_js/jquery-ui.min.js"></script>
+    <script src="_js/jquery.timepicker.min.js"></script>
+    <script src="jquery_validate/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            //smartmenus
+            $('.sm').smartmenus({
+                showFunction: function($ul, complete) {
+                    $ul.slideDown(250, complete);
+                },
+                hideFunction: function($ul, complete) {
+                    $ul.slideUp(250, complete);
+                }
+            }); //end smartmenus
+
+            //start date picker
+            $('#appointment-date').datepicker({
+                minDate :0,
+                maxDate: '+1y'
+            });
+
+            //start a time picker
+            $('#appointment-time').timepicker();
+
+            $('#services').selectmenu({ width:170 });
+            $('#customers').selectmenu({ width:50});
+            $('#appointment-button').button({
+                icons : {
+                    secondary : 'ui-icon-circle-arrow-e'
+                }
+            });
+
+
+            //start contact form validation
+            $('#appointmentForm').validate({
+                rules: {
+                    customerName: 'required',
+                    appointmentDate : 'required',
+                    appointmentTime : 'required',
+                    services : 'required',
+                    numberCustomers: 'required'
+
+                }, //end rules
+                messages: {
+                    customerName: 'This field is required',
+                    appointmentDate : 'This field is required',
+                    appointmentTime : 'This field is required',
+                    services : 'This field is required',
+                    numberCustomers: 'This field is required'
+
+                }
+            }); // end validate
+
+        }); // end ready
+    </script>
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="main">
+                <h1 class="shop-name">KN Beauty Salon</h1>
+                <ul class="sm sm-clean">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us </a>
+                        <ul>
+                            <li><a href="about.html">Our History</a></li>
+                            <li><a href="direction.html">Driving Directions</a></li>
+                            <li><a href="hours.html">Hours</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Our Services </a></li>
+                    <li><a href="gallery.html">Our Slideshow </a></li>
+                    <li><a href="appointment.html">Make Appointment </a></li>
+                    <li><a href="contact.html">Contact us </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="content">
+        <div class="appointment-form">
+            <h1 id="appointmentHeading">Book Your Appointment</h1>
+            <form id="appointmentForm" action="http://www.rebol.com/cgi-bin/test-cgi.cgi" method="post" >
+
+                <div>
+                    <label for="customer-name" class="label">Full Name</label>
+                    <input type="text" id="customer-name" name="customerName">
+                </div>
+
+                <div>
+                    <label for="appointment-date" class="label">Pick a date</label>
+                    <input type="text" id="appointment-date" name="appointmentDate">
+                </div>
+
+                <div>
+                    <label for="appointment-time" class="label">Pick a Time</label>
+                    <input type="text" id="appointment-time" name="appointmentTime">
+                </div>
+
+                <div>
+                    <label for="services" class="label">Services</label>
+                    <select name="services" id="services">
+                        <option>Hair Cut</option>
+                        <option>Massage</option>
+                        <option>Waxing</option>
+                        <option>Pedicure</option>
+                        <option>Manicure</option>
+                        <option>Acrylic nails</option>
+                        <option>Make up</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="customers" class="label">Number of Customers</label>
+                    <select name="numberCustomers" id="customers">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>>5</option>
+                        <option>Group</option>
+                    </select>
+                </div>
+
+
+                <div class="button">
+                    <button id="appointment-button" name="appointmentButton" type="submit" value="Submit">Continue reservation process</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <link href="smartmenus/sm-core-css.css" rel="stylesheet" >
+    <link href="smartmenus/sm-clean.css" rel="stylesheet" >
+    <script src="_js/jquery.min.js"></script>
+    <script src="smartmenus/jquery.smartmenus.min.js"></script>
+    <script src="jquery_validate/jquery.validate.min.js"></script>
+    <title> Contact us</title>
+    <script>
+        $(document).ready(function() {
+            //start smartmenus
+            $('.sm').smartmenus({
+                showFunction: function($ul, complete) {
+                    $ul.slideDown(250, complete);
+                },
+                hideFunction: function($ul, complete) {
+                    $ul.slideUp(250, complete);
+                }
+            }); //end smartmenus
+
+            //start contact form validation
+            $('#contactForm').validate({
+                rules: {
+                    firstName: 'required',
+                    lastName : 'required',
+                    subject : 'required'
+
+                }, //end rules
+                messages: {
+                    firstName: 'This field is required' ,
+                    lastName: 'This field is required',
+                    subject: 'This field is required',
+
+                }
+            }); // end validate
+
+        }); // end ready
+    </script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style inputs */
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit] {
+            background-color: pink;
+        }
+
+
+        /* Style the container/contact section */
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        /* Create two columns that float next to eachother */
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="main">
+                <h1 class="shop-name">KN Beauty Salon</h1>
+                <ul class="sm sm-clean">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us </a>
+                        <ul>
+                            <li><a href="about.html">Our History</a></li>
+                            <li><a href="direction.html">Driving Directions</a></li>
+                            <li><a href="hours.html">Hours</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Our Services </a></li>
+                    <li><a href="gallery.html">Our Slideshow </a></li>
+                    <li><a href="appointment.html">Make Appointment </a></li>
+                    <li><a href="contact.html">Contact us </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="container">
+    <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Please leave us a message.</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="images/contactImage.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <form name="contactForm" id="contactForm" action="http://www.rebol.com/cgi-bin/test-cgi.cgi" method="post">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your name..">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input class="submit-button" type="submit" value="Submit" >
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
