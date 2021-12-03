@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>KN Beauty Spa's home page</title>
-    <link href="CSS/stylesheet.css" rel="stylesheet">
-    <link href="smartmenus/sm-core-css.css" rel="stylesheet" >
-    <link href="smartmenus/sm-clean.css" rel="stylesheet" >
-    <script src="_js/jquery.min.js"></script>
-    <script src="smartmenus/jquery.smartmenus.min.js"></script>
+    <link href="./CSS/stylesheet.css" rel="stylesheet">
+    <link href="./smartmenus/sm-core-css.css" rel="stylesheet" >
+    <link href="./smartmenus/sm-clean.css" rel="stylesheet" >
+    <script src="./_js/jquery.min.js"></script>
+    <script src="./smartmenus/jquery.smartmenus.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -23,12 +23,6 @@
                 }
             });
 
-            //log in
-            $('#open').click(function (evt) {
-                evt.preventDefault();
-                $('#login form').slideToggle(300);
-                (this).toggleClass('close');
-            });//end click
 
         }); // end ready
 
@@ -42,22 +36,6 @@
 <body>
     <header id="index-header"> <script> printToday() </script> <!-- for current date -->
 
-        <div id="login">  <!-- Log in section -->
-            <a href="form.html"><p id="open">Login</p></a>
-            <form>
-                <p>
-                    <label for="username">Username:</label>
-                    <input type="text" name="username" id="username">
-                </p>
-                <p>
-                    <label for="password">Password: </label>
-                    <input type="text" name="password" id="password">
-                </p>
-                <p class="button">
-                    <input type="submit" name="button" id="button" value="Log in" >
-                </p>
-            </form>
-        </div>
     </header>
 
     <div class="wrapper">
